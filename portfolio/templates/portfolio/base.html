@@ -1,0 +1,29 @@
+{% load static %}
+
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="{% static 'portfolio/css/style.css' %}">
+        <title>Alex's Website</title>
+        <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Lato&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="{% static 'portfolio/images/mainIcon.png' %}">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <div id="navBar">
+            <ul id="navBarList">
+                <a href="{% url 'home' %}" class="websiteIconLink"><img class="mainIcon" src="{% static 'portfolio/images/mainIcon.png' %}"></a>
+                <a href="{% url 'home' %}" class="websiteSectionLink"><li class="navBarLink">Home</li></a>
+                <a href="{% url 'portfolio' %}" class="websiteSectionLink"> <li class="navBarLink">Portfolio</li></a>
+                <a href="{% url 'blog' %}" class="websiteSectionLink"><li class="navBarLink">Blog</li></a>
+                <a href="{% url 'readingList' %}" class="websiteSectionLink"><li class="navBarLink">Reading List</li></a>
+            </ul>
+        </div>
+        <hr class="headerLine">
+
+        {% block content %}
+        {% endblock %}
+    </body>
+</html>
