@@ -181,3 +181,15 @@ html{
     text-align: center;
     font-family: 'Bree Serif', serif;
 }
+
+.viewMoreOnGithub{
+    text-align: center;
+}
+
+.viewMore{
+    width: 30%;
+}
+
+.readListInfo{
+    font-family: 'Lora', serif;
+}
