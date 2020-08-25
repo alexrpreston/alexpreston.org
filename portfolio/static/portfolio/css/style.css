@@ -254,13 +254,45 @@ html{
     border-style: solid;
     border-color: #d3d3d3;
     border-width: 2px;
+    
+}
+
+.aboutBlurb{
+    padding-top: 5%;
+    margin-left: 25%;
+    width: 30%;
+
+}
+
+.emailBelowAbout{
+    margin: auto;
+    width: 50%;
+}
+
+..emailBelowAbout:hover{
+
+}
+
+
+
+.resumeImage:hover{
+    filter: none;
+  -webkit-filter: none;
 }
 
 .resumeImageLink{
+    padding: 3% 0%;
     width: 50%;
     display: block;
     margin: auto;
 }
+
+
+.resumeImageLink:hover{
+    webkit-filter: blur(1px); /* Chrome, Safari, Opera */
+    filter: blur(1px);
+}
+
 footer{
     display: flex;
     margin: auto;
