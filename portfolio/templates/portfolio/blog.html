@@ -3,5 +3,20 @@
 
 
 {% block content %}
-<h2>My Blog</h2>
+
+<div class="col-md-8 mt-3 left">
+    {% for post in post_list %}
+    <div class="card mb-4">
+        <div class="card-body">
+            <p class="card-text blogPostDate">{{ post.created_on}} </p>
+            <a href="{% url 'post_detail' post.slug  %}" class="btn btn-primary"></a><h2 class="blogTitle">{{ post.title }}</h2></a>
+            <p class="card-text">{{post.content|slice:":200" }}</p>
+            <a href="{% url 'post_detail' post.slug  %}" class="btn btn-primary">Continue Reading</a>
+        </div>
+    </div>
+    <hr class="blogDivider">
+    {% endfor %}
+</div>
+
+
 {% endblock %}

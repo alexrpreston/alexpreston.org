@@ -1,5 +1,5 @@
 html{
-    background-color: #f8f8ff;
+    background-color: #ffffff;
 }
 
 #navBarList{
@@ -14,6 +14,16 @@ html{
     padding-top: 1%;
 }
 
+.resumeDownloadLinks{
+    display: flex;
+    width: 17%;
+    margin: auto;
+}
+
+.resumedownloadLink{
+    flex: 1;
+}
+
 #navBarList > a.websiteSectionLink {
     position: relative;
     padding: 1% 2%;
@@ -23,6 +33,34 @@ html{
     display: inline-block;
     text-decoration: none;
     color: #000;
+}
+.blogPostDate{
+    color: #999999;
+}
+
+.blogTitle{
+    width: 30%;
+    color: #222222;
+}
+
+
+.blogTitle:hover{
+    text-decoration: underline;
+    text-decoration-color: #999999;
+    text-decoration-line: 1px;
+}
+
+
+.card{
+    width: 50%;
+    margin: auto;
+}
+
+.blogDivider{
+    background-color: #D1D3D4;
+    height: 1px;
+    border: none;
+    width: 50%;
 }
 
 #navBarList > a.websiteSectionLink li{
@@ -166,6 +204,15 @@ html{
     color: white;
 }
 
+.aboutHeader{
+    padding: 1%;
+    font-size: 175%;
+    font-family: 'Bree Serif', serif;
+    text-decoration: underline;
+    width: 50%;
+    margin: auto;
+}
+
 .projectLanguageBox{
     background-color: #7384F5;
     display: inline-block;
@@ -183,7 +230,12 @@ html{
 }
 
 .viewMoreOnGithub{
+    color: #447AB2;
     text-align: center;
+}
+
+.viewMoreOnGithubLink{
+    text-decoration: none;
 }
 
 .viewMore{
@@ -192,4 +244,47 @@ html{
 
 .readListInfo{
     font-family: 'Lora', serif;
+}
+
+.resumeImage{
+    display: block;
+    margin: auto;
+    width: 100%;
+
+    border-style: solid;
+    border-color: #d3d3d3;
+    border-width: 2px;
+}
+
+.resumeImageLink{
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+footer{
+    display: flex;
+    margin: auto;
+    width: 90%;
+}
+
+.footerLine{
+    margin-top: 5%;
+    background-color: grey;
+}
+
+.websiteCertFooter{
+    flex: 1;
+}
+
+.socialLinksFooter{
+    flex: 5;
+}
+
+.websiteSourceCodeFooter{
+    flex: 1;
+}
+
+.portfolioLink{
+    text-decoration: none;
+    color: black;
 }

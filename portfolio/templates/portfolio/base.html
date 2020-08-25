@@ -17,8 +17,8 @@
                 <a href="{% url 'home' %}" class="websiteIconLink"><img class="mainIcon" src="{% static 'portfolio/images/mainIcon.png' %}"></a>
                 <a href="{% url 'home' %}" class="websiteSectionLink"><li class="navBarLink">Home</li></a>
                 <a href="{% url 'portfolio' %}" class="websiteSectionLink"> <li class="navBarLink">Portfolio</li></a>
+                <a href="{% url 'resume' %}" class="websiteSectionLink"><li class="navBarLink">Resume</li></a>
                 <a href="{% url 'blog' %}" class="websiteSectionLink"><li class="navBarLink">Blog</li></a>
-                <a href="{% url 'readingList' %}" class="websiteSectionLink"><li class="navBarLink">Reading List</li></a>
             </ul>
         </div>
         <hr class="headerLine">
@@ -26,4 +26,22 @@
         {% block content %}
         {% endblock %}
     </body>
+
+    <hr class="footerLine">
+    <footer>
+        <div class="websiteCertFooter">
+            <h4>© 2020 by Alex Preston</h4>
+        </div>
+        
+        <div id="socialLinks" class="socialLinksFooter">
+            <a target="_blank" href="https://www.linkedin.com/in/alexrpreston/"><img class="socialLinkIcon" src="{% static 'portfolio/images/linkedin.png' %}"></a>
+            <a target="_blank" href="https://github.com/alexrpreston"><img class="socialLinkIcon" src="{% static 'portfolio/images/github.png' %}"></a>
+            <a target="_blank" href="mailto:apreston@smu.edu"><img class="socialLinkIcon" src="{% static 'portfolio/images/mail.png' %}"></a>
+            <a target="_blank" href="mailto:apreston@smu.edu"><img class="socialLinkIcon" src="{% static 'portfolio/images/stackoverflow.png' %}"></a>
+        </div>
+        <div class="websiteSourceCodeFooter">
+            <a class="portfolioLink" href="https://github.com/alexrpreston/alex.com-Portfolio-Website" target="_blank"><h4>View Source on Github</h4></a>
+        </div>
+        
+    </footer>
 </html>
