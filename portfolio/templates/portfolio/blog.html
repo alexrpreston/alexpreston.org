@@ -11,7 +11,7 @@
             <p class="card-text blogPostDate">{{ post.created_on}} </p>
             <a href="{% url 'post_detail' post.slug  %}" class="btn btn-primary"></a><h2 class="blogTitle">{{ post.title }}</h2></a>
             <p class="card-text">{{post.content|slice:":200" }}</p>
-            <a href="{% url 'post_detail' post.slug  %}" class="btn btn-primary">Continue Reading</a>
+            <a href="{% url 'post_detail' post.slug  %}" class="continueReadingBlogButton">Continue Reading</a>
         </div>
     </div>
     <hr class="blogDivider">

@@ -15,13 +15,28 @@ html{
 }
 
 .resumeDownloadLinks{
+    text-decoration: none;
+    color: #337BA3;
+    text-align: center;
     display: flex;
-    width: 17%;
-    margin: auto;
+    justify-content: center;
+    width: 100%;
+}
+
+
+
+
+.continueReadingBlogButton{
+    color: #337BA3;
+    font-family: 'Oswald', sans-serif;
+    font-size: 110%;
 }
 
 .resumedownloadLink{
-    flex: 1;
+    padding: 0% 2%;
+    display: inline-block;
+    font-size: 120%;
+    color: #337BA3;
 }
 
 #navBarList > a.websiteSectionLink {
@@ -34,13 +49,17 @@ html{
     text-decoration: none;
     color: #000;
 }
+
 .blogPostDate{
     color: #999999;
+    
 }
 
 .blogTitle{
     width: 30%;
-    color: #222222;
+    color: #337BA3;
+    font-family: 'Oswald', sans-serif;
+    font-size: 160%;
 }
 
 
@@ -53,7 +72,7 @@ html{
 
 .card{
     width: 50%;
-    margin: auto;
+    margin: 0% auto;
 }
 
 .blogDivider{
@@ -186,13 +205,13 @@ html{
 .projectWebsiteLink{
     padding: 0% 3%;
     margin: 1% 0%;
-    color: #447AB2;
+    color: #337BA3;
 }
 
 .projectCodeLink{
     padding: 0% 3%;
     margin: 1% 0%;
-    color: #447AB2;
+    color: #337BA3;
 }
 
 .projectLanguagesList{
@@ -230,8 +249,9 @@ html{
 }
 
 .viewMoreOnGithub{
-    color: #447AB2;
+    color: #337BA3;
     text-align: center;
+    
 }
 
 .viewMoreOnGithubLink{
@@ -266,11 +286,13 @@ html{
 
 .emailBelowAbout{
     margin: auto;
+    text-decoration: underline;
     width: 50%;
 }
 
-..emailBelowAbout:hover{
-
+.emailBelowAbout:hover{
+    background-color: grey;
+    width: 50%;
 }
 
 
