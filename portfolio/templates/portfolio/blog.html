@@ -1,6 +1,6 @@
 {% extends 'portfolio/base.html' %}
 {% load static %}
-
+{% load markdown_extras %}
 
 {% block content %}
 
@@ -10,7 +10,7 @@
         <div class="card-body">
             <p class="card-text blogPostDate">{{ post.created_on}} </p>
             <a href="{% url 'post_detail' post.slug  %}" class="btn btn-primary"></a><h2 class="blogTitle">{{ post.title }}</h2></a>
-            <p class="card-text">{{post.content|slice:":200" }}</p>
+            <p class="card-text">{{post.content | markdown |slice:":200" }}</p>
             <a href="{% url 'post_detail' post.slug  %}" class="continueReadingBlogButton">Continue Reading</a>
         </div>
     </div>
