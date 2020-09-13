@@ -1,0 +1,90 @@
+{% extends 'portfolio/base.html' %}
+{% load static %}
+
+
+{% block content %}
+<h2 class="portfolioHeaderText">Projects</h2>
+
+<div class="individualProjects">
+    <div class="projectImageDiv">
+        <img class="projectImage" src="{% static 'portfolio/images/bookSummarizer.png' %}">
+    </div>
+    <div class="projectInfo">
+        <h3 class="projectName">SummarizeMe</h3>
+        <p>SummarizeMe is a online summarization tool that lets users input any text such as an article, research paper, or anaylaticial paper, and automatically summarizes it using extractive summarization algorithms. The website also lets users upload their own files such as a .TXT or .PDF to summarize. The website then lets the user choose how the text is processed, such as what algorithm to use, what kinds of sentences to use, and how long the summary should be. </p>
+        <a class="projectWebsiteLink" target="_blank" href="https://summarizen.com/">View Website</a>
+        <a class="projectCodeLink" href="https://github.com/alexrpreston/Book-Summarizer" target="_blank">View Code</a>
+        <ul class="projectLanguagesList">
+            <li class="projectLanguageBox"><div class="projectLanguage">Python</div></li>
+            <li class="projectLanguageBox"><div class="projectLanguage">Django</div></li>
+            <li class="projectLanguageBox"><div class="projectLanguage">PostgreSQL</div></li>
+            <li class="projectLanguageBox"><div class="projectLanguage">JavaScript</div></li>
+            <li class="projectLanguageBox"><div class="projectLanguage">HTML/CSS</div></li>
+        </ul>
+    </div>
+</div>
+
+
+<div class="individualProjects">
+    <div class="projectImageDiv">
+        <img class="projectImage" src="{% static 'portfolio/images/gpQuant.png' %}">
+    </div>
+    <div class="projectInfo">
+        <h3 class="projectName">GP Quantitative</h3>
+        <p>GP Quantitative is a financial analysis website that offers non-professional investors alternative data that is scraped from across the internet. The data is then aggregated in a free easy-to-use online dashboard. This allows retail investors to harness the power of big data to aid in their investing process.</p>
+        <a class="projectCodeLink" target="_blank" href="https://github.com/alexrpreston/GPQuants">View Code</a>
+        <ul class="projectLanguagesList">
+            <li class="projectLanguageBox"><div class="projectLanguage">Python</div></li>
+            <li class="projectLanguageBox"><div class="projectLanguage">Django</div></li>
+            <li class="projectLanguageBox"><div class="projectLanguage">HTML/CSS</div></li>
+            <li class="projectLanguageBox"><div class="projectLanguage">PostgreSQL</div></li>
+            <li class="projectLanguageBox"><div class="projectLanguage">Pandas</div></li>
+            <li class="projectLanguageBox"><div class="projectLanguage">NumPy</div></li>
+            
+        </ul>
+    </div>
+</div>
+
+<div class="individualProjects">
+    <div class="projectImageDiv">
+        <img class="projectImage" src="{% static 'portfolio/images/newsAggregator.png' %}">
+    </div>
+    <div class="projectInfo">
+        <h3 class="projectName">FinTech News Aggregator</h3>
+        <p>FinTech News is a webiste that scrapes data from six different news outlets and aggregates their topheadlines in one easy to view page. The service continuously scrapes every hour so the news is always up to date.</p>
+        <a class="projectWebsiteLink" href="http://alexrpreston.pythonanywhere.com/newsapp/" target="_blank">View Website</a>
+        <a class="projectCodeLink" href="https://github.com/alexrpreston/News-Aggregator" target="_blank">View Code</a>
+        <ul class="projectLanguagesList">
+            <li class="projectLanguageBox"><div class="projectLanguage">Python</div></li>
+            <li class="projectLanguageBox"><div class="projectLanguage">Django</div></li>
+            <li class="projectLanguageBox"><div class="projectLanguage">JavaScript</div></li>
+            <li class="projectLanguageBox"><div class="projectLanguage">SQLite</div></li>
+            <li class="projectLanguageBox"><div class="projectLanguage">HTML/CSS</div></li>
+            
+        </ul>
+    </div>
+</div>
+
+<div class="individualProjects">
+    <div class="projectImageDiv">
+        <img class="projectImage" src="{% static 'portfolio/images/searchEngine.png' %}">
+    </div>
+    <div class="projectInfo">
+        <h3 class="projectName">CORPUS Search Engine</h3>
+        <p>The Search Engine was a final group project for CS 2341. We coded it in C++ and used a few outside libraries to do data processing such as a Stemmer and a JSON Parser. The database can either be stored in a Hash Map or an AVL Tree depeding on what the user specifies in the UI. </p>
+        <a class="projectCodeLink" href="https://github.com/alexrpreston/Search-Engine" target="_blank">View Code</a>
+        <ul class="projectLanguagesList">
+            <li class="projectLanguageBox"><div class="projectLanguage">C++</div></li>
+        </ul>
+    </div>
+</div>
+
+
+
+<div class="individualProjects viewMore">
+    <div class="projectInfo">
+        <a target="_blank" href="https://github.com/alexrpreston" class="viewMoreOnGithubLink"><h3 class="viewMoreOnGithub">View the Rest on Github</h3></a>
+    </div>    
+</div>
+
+{% endblock %}

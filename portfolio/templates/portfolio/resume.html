@@ -1,0 +1,13 @@
+{% extends 'portfolio/base.html' %}
+{% load static %}
+
+
+{% block content %}
+<a class="resumeImageLink" target="_blank" href="{% static 'portfolio/images/resume.pdf' %}"><img class="resumeImage" src="{% static 'portfolio/images/resume.png' %}"></a>
+
+<div class="resumeDownloadLinks">
+    <a class="resumedownloadLink" href="{% static 'portfolio/images/resume.docx' %}" download>[Download .docx]</a>
+    <a class="resumedownloadLink" href="{% static 'portfolio/images/resume.pdf' %}" download>[Download .pdf]</a>
+</div>
+
+{% endblock %}

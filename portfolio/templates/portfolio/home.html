@@ -1,0 +1,24 @@
+{% extends 'portfolio/base.html' %}
+{% load static %}
+
+
+{% block content %}
+<div class="imageNameHeader">
+    <img class="profileImage" src="{% static 'portfolio/images/profileImage.jpeg' %}">
+    <div class="imageNameInfo">
+        <h4 class="nameHeader">Alex Preston</h4>
+        <p class="nameSubHeader">Student at Southern Methodist Univeristy</p>  
+        <div class="socialLinksHomePage">
+            <a target="_blank" href="https://www.linkedin.com/in/alexrpreston/"><img class="socialLinkIconHomePage" src="{% static 'portfolio/images/linkedin.png' %}"></a>
+            <a target="_blank" href="https://github.com/alexrpreston"><img class="socialLinkIconHomePage" src="{% static 'portfolio/images/github.png' %}"></a>
+            <a target="_blank" href="mailto:apreston@smu.edu"><img class="socialLinkIconHomePage" src="{% static 'portfolio/images/stackoverflow.png' %}"></a>
+        </div>
+    </div>
+      
+</div>
+<p class="aboutBlurb"><br>Hi, I'm Alex. I'm passionate about web development, data science, and all things machine learning.</p>
+<p class="aboutBlurb">In my free time I like to read books, cook, and go running with friends.</p>
+<p class="aboutBlurb">Some of my personal achievements are running a half marathon, placing 3rd in a robot competition, and getting funded for research.</p>
+<a href="mailto: apreston@smu.edu"><h4 class="emailBelowAbout">apreston@smu.edu</h4></a>
+{% endblock %}
+        
