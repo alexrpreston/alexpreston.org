@@ -23,14 +23,6 @@ html{
 }
 
 
-
-
-.continueReadingBlogButton{
-    color: #337BA3;
-    font-family: 'Oswald', sans-serif;
-    font-size: 110%;
-}
-
 .resumedownloadLink{
     padding: 0% 2%;
     display: inline-block;
@@ -52,27 +44,27 @@ html{
 
 .blogPostDate{
     color: #999999;
-    
+    font-size: 110%;
+    margin-bottom: -3%;
 }
 
 .blogTitle{
-    width: 30%;
     color: #337BA3;
     font-family: 'Oswald', sans-serif;
-    font-size: 160%;
+    font-size: 120%;
+    text-decoration: none;
+    margin-top: 0;
 }
 
 
 .blogTitle:hover{
-    text-decoration: underline;
-    text-decoration-color: #999999;
-    text-decoration-line: 1px;
+    color:black;
 }
-
 
 .card{
     width: 50%;
-    margin: 0% auto;
+    margin: auto;
+    padding-bottom: 2%;
 }
 
 footer{
@@ -238,10 +230,6 @@ footer{
     color: #999999;
     font-size: 130%;
     margin-top: 0%;
-}
-
-.nameSubHeader:hover{
-    
 }
 
 .emailBelowAbout{

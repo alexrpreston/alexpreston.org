@@ -25,7 +25,7 @@ SECRET_KEY = '%wf7an1%&x6(ao8o%*1g)u2guw-pugg7kd&jpms5hqhsh8bf&z'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['68.183.120.121', 'localhost', 'alexpreston.org', 'www.alexpreston.org']
+ALLOWED_HOSTS = ['68.183.120.121', 'localhost', 'alexpreston.org', 'www.alexpreston.org', '127.0.0.1']
 
 # Application definition
 
