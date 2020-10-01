@@ -44,13 +44,16 @@ html{
 
 .blogPostDate{
     color: #999999;
+    font-size: 110%;
+    margin-bottom: -3%;
 }
 
 .blogTitle{
     color: #337BA3;
     font-family: 'Oswald', sans-serif;
-    font-size: 160%;
+    font-size: 120%;
     text-decoration: none;
+    margin-top: 0;
 }
 
 
@@ -60,7 +63,8 @@ html{
 
 .card{
     width: 50%;
-    margin: 0% auto;
+    margin: auto;
+    padding-bottom: 2%;
 }
 
 footer{
