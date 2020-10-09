@@ -1,8 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
 from markdownx.models import MarkdownxField
-from markdownx.utils import markdownify
-
 # Create your models here.
 
 STATUS = (
@@ -19,8 +17,7 @@ class Post(models.Model):
     created_on = models.CharField(max_length=200, unique=True)
     status = models.IntegerField(choices=STATUS, default=0)
 
-    def formatted_markdown(self):
-            return markdownify(self.body)
+
     class Meta:
         ordering = ['-created_on']
 

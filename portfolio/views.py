@@ -2,6 +2,10 @@ from django.shortcuts import render
 from django.views import generic
 from .models import Post
 # Create your views here.
+from django import template
+from markdownx.utils import markdownify
+
+register = template.Library()
 
 def home(request):
     return render(request, "portfolio/home.html")
