@@ -7,12 +7,14 @@
     <p class="readListInfo">I really enjoy reading and I've found that if I share my reading list it helps me stay consistent. I usually take notes on any Non-Fiction book I read and they are viewable at my <a target="_blank" href="https://www.evernote.com/pub/alexrpreston/books">Evernote notebook.</a><br><br>
         I also add every book I read and in my queue to my <a target="_blank" href="https://www.goodreads.com/user/show/108050931-alex">Goodreads account</a>.  
         
-    {% for object in book_Info %}
-    <h3 class="readingListYear">{{ object.year  }}</h3>
+    
+    <h3 class="readingListYear">2020</h3>
     <ol class="bookTitleList">
+        {% for object in book_Info %}
             <li class="bookTitle">{{ object.title }}, by {{ object.author }}</li>
-    </ol>
-    {% endfor %}
+        {% endfor %}
+        </ol>
+    
 </div>
 
 {% endblock %}
