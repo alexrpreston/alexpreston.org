@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.views import generic
-from .models import Post
+from .models import Post, Book
 # Create your views here.
 from django import template
 from markdownx.utils import markdownify
@@ -17,7 +17,11 @@ def blog(request):
     return render(request, "portfolio/blog.html")
 
 def readingList(request):
-    return render(request, "portfolio/readingList.html")
+    bookInfo = Book.objects.all()[0:]
+    context = {
+        'book_Info' : bookInfo
+    }
+    return render(request, "portfolio/readingList.html", context)
 
 def resume(request):
     return render(request, "portfolio/resume.html")
