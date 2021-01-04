@@ -193,17 +193,33 @@ footer{
     display: flex;
 }
 
+.headerImageLink{
+    width: 10%;
+    margin-left: 25%;
+}
+
+.profileImage{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.headerNameLink{
+    text-decoration: none;
+    color: black;
+}
+.headerNameLink:hover{
+    text-decoration: none;
+    color: #337BA3;
+}
+
+
 
 .imageNameInfo{
     flex: 1;
     padding-left: 2.5%;
 }
 
-.profileImage{
-    width: 10%;
-    margin-left: 25%;
-    border-radius: 50%;
-}
+
 
 .socialLinksHomePage{
     flex: 3;
@@ -221,6 +237,16 @@ footer{
     margin-top: 0%;
     margin-bottom: 0%;
     width: 30%;
+}
+
+.homePageSectionHeader{
+    font-family: 'Bree Serif', serif;
+    font-size: 200%;
+}
+
+.homePageSections{
+    width: 50%;
+    margin: auto;
 }
 
 .nameHeader:hover{
@@ -298,11 +324,12 @@ footer{
     margin: 0% 1%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
-
+.portfolioHeader{
+    margin: auto;
+    width: 50%;
+}
 .portfolioHeaderText{
     font-size: 180%;
-    text-align: center;
     font-family: 'Bree Serif', serif;
 }
 
@@ -323,41 +350,6 @@ footer{
 .readListInfo{
     font-family: 'Lora', serif;
 }
-
-.resumeImage{
-    display: block;
-    margin: auto;
-    width: 100%;
-    border-style: solid;
-    border-color: #d3d3d3;
-    border-width: 2px;
-    margin: 7% 0% 4% 0%;
-}
-
-.aboutBlurb{
-    margin-left: 25%;
-    width: 30%;
-    font-family: 'Lora', serif;
-    font-size: 120%;
-}
-
-
-
-
-.resumeImage:hover{
-    filter: none;
-  -webkit-filter: none;
-  border-style: solid;
-    border-color: #d3d3d3;
-    border-width: 3px;
-}
-
-.resumeImageLink{
-    width: 50%;
-    display: block;
-    margin: auto;
-}
-
 
 footer{
     display: flex;

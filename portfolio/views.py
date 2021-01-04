@@ -8,7 +8,11 @@ from markdownx.utils import markdownify
 register = template.Library()
 
 def home(request):
-    return render(request, "portfolio/home.html")
+    queryset = Post.objects.filter(status=1).order_by('-created_on')
+    context = {
+        'post_list': queryset
+    }
+    return render(request, "portfolio/home.html", context)
 
 def portfolio(request):
     return render(request, "portfolio/portfolio.html")
