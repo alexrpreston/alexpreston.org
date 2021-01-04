@@ -8,18 +8,21 @@
     <div class="homePageSections">
         <div>
             <h4 class="homePageSectionHeader">What I'm working on</h4>
-            <ul>
-                <li>Summarizen</li>
-                <li>Anim</li>
+            <ul class="projectListHomePage">
+                <li class="projectListElement"><a href="https://summarizen.com/" class="projectListElementLink" target="_blank">Summarizen</a>
+                <li class="projectListElement">Anim (beta coming soon)</li>
             </ul>
-            <h5>Get a full list on my <a href="{% url 'portfolio' %}" class="websiteSectionLink">Projects page</a></h5>
+            <h5 class="viewMoreHomePage">Get a full list on my <a href="{% url 'portfolio' %}" class="viewMoreHomePageLink">Projects page</a></h5>
         </div>
         <div>
             <h4 class="homePageSectionHeader">Newest Articles</h4>
                 {% for post in post_list %}
-                        <a href="{% url 'post_detail' post.slug  %}" class="blogTitle"><h2>{{ post.title }}</h2></a>
+                    <div class="blogCardHomePage">
+                        <a href="{% url 'post_detail' post.slug  %}" class="blogTitleHomePage"><h2>{{ post.title }}</h2></a>
+                        <p class="blogPostDateHomePage">{{ post.created_on}} </p>
+                    </div>
                 {% endfor %}
-            <h5><a href="{% url 'blog' %}" class="websiteSectionLink">See the rest</a></h5>
+            <h5 class="viewMoreHomePage">Read the rest <a href="{% url 'blog' %}" class="viewMoreHomePageLink">here.</a></h5>
             
         </div>
     </div>

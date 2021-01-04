@@ -56,6 +56,26 @@ html{
     margin-top: 0;
 }
 
+.blogCardHomePage{
+    margin-top: -5%;
+    display: flex;
+}
+
+.blogPostDateHomePage{
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    color: #999999;
+    font-size: 115%;
+}
+
+.blogTitleHomePage{
+    color: #337BA3;
+    font-family: 'Oswald', sans-serif;
+    font-size: 100%;
+    text-decoration: none;
+    margin-top: 0;
+}
+
 
 .blogTitle:hover{
     color:black;
@@ -256,6 +276,31 @@ footer{
     color: #999999;
     font-size: 130%;
     margin-top: 0%;
+}
+.projectListHomePage{
+    list-style-type: square;
+    list-style-position: inside;
+    padding: 0;
+}
+
+.projectListElement{
+    font-family: 'Oswald', sans-serif;
+    font-size: 125%;
+    font-weight: 600;
+}
+
+.projectListElementLink{
+    color: #337BA3;
+    text-decoration: none;
+}
+
+.viewMoreHomePage{
+    font-size: 110%;
+}
+
+.viewMoreHomePageLink{
+    color: #337BA3; 
+    text-decoration: none;
 }
 
 .emailBelowAbout{
