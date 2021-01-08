@@ -18,8 +18,8 @@
             <h4 class="homePageSectionHeader">Newest Articles</h4>
                 {% for post in post_list %}
                     <div class="blogCardHomePage">
-                        <a href="{% url 'post_detail' post.slug  %}" class="blogTitleHomePage"><h2>{{ post.title }}</h2></a>
                         <p class="blogPostDateHomePage">{{ post.created_on}} </p>
+                        <a href="{% url 'post_detail' post.slug  %}" class="blogTitleHomePage"><h2>{{ post.title }}</h2></a>
                     </div>
                 {% endfor %}
             <h5 class="viewMoreHomePage">Read the rest <a href="{% url 'blog' %}" class="viewMoreHomePageLink">here.</a></h5>
