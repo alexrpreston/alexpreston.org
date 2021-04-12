@@ -18,7 +18,7 @@
             <h4 class="homePageSectionHeader">Newest Articles</h4>
                 {% for post in post_list %}
                     <div class="blogCardHomePage">
-                        <p class="blogPostDateHomePage">{{ post.created_on}} </p>
+                        <p class="blogPostDateHomePage">{{ post.created_on}}</p>
                         <a href="{% url 'post_detail' post.slug  %}" class="blogTitleHomePage"><h2>{{ post.title }}</h2></a>
                     </div>
                 {% endfor %}

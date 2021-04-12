@@ -17,15 +17,13 @@ html{
 }
 
 .blogCardHomePage{
-    margin-top: -5%;
-    display: flex;
+    display: inline;
 }
 
 .blogPostDateHomePage{
-    padding-top: 1.5%;
-    padding-left: 1.5%;
     color: #999999;
     font-size: 115%;
+    margin-bottom: -2%;
 }
 
 .blogTitleHomePage{
@@ -124,6 +122,7 @@ html{
 .homePageSectionHeader{
     font-family: 'Bree Serif', serif;
     font-size: 200%;
+    margin-bottom: -1%;
 }
 
 .homePageSections{
@@ -308,7 +307,6 @@ html{
         margin-bottom: -5%;
     }
     .blogCardHomePage{
-        margin-top: -5%;
         display: inline;
     }
     .blogPostDateHomePage{
