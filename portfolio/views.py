@@ -20,12 +20,12 @@ def portfolio(request):
 def blog(request):
     return render(request, "portfolio/blog.html")
 
-def readingList(request):
-    bookInfo = Book.objects.all()[0:]
-    context = {
-        'book_Info' : bookInfo
-    }
-    return render(request, "portfolio/readingList.html", context)
+# def readingList(request):
+#     bookInfo = Book.objects.all()[0:]
+#     context = {
+#         'book_Info' : bookInfo
+#     }
+#     return render(request, "portfolio/readingList.html", context)
 
 def resume(request):
     return render(request, "portfolio/resume.html")
@@ -37,3 +37,11 @@ class PostList(generic.ListView):
 class PostDetail(generic.DetailView):
     model = Post
     template_name = 'portfolio/post_detail.html'
+
+class BookList(generic.ListView):
+    queryset = Book.objects.all()[0:]
+    template_name = 'portfolio/bookList.html'
+
+class BookDetail(generic.DetailView):
+    model = Book
+    template_name = 'portfolio/bookNotes.html'

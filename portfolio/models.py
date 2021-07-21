@@ -10,7 +10,8 @@ STATUS = (
 class Book(models.Model):
     title = models.CharField(max_length=200, unique=True)
     author = models.CharField(max_length=200, unique=False)
-    year = models.CharField(max_length=200, unique=False)
+    slug = models.SlugField(max_length=200, unique=True)
+    notes = MarkdownxField()
 
     def __str__(self):
         return self.title

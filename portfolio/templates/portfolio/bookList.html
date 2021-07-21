@@ -1,0 +1,17 @@
+{% extends 'portfolio/base.html' %}
+{% load static %}
+
+{% block content %}
+<div>
+    <div class="">
+        <a href="{% url 'home' %}" class="text-dark nameLink"><p class="fs-1 fw-bold m-0">Alex Preston / bookshelf</p></a>
+    </div>
+  </div>
+<div class="">
+    <p class="fs-5">I created this as a way to share books I've liked and the notes I've taken. I haven't finished every book on this list, some I've only read a few chapters, some I've read many times. Books marked in green I thought were extraordinary, ones that are underlined have a link to a notes page.</p>
+    {% for object in book_list %}
+        <a href="{% url 'bookNotes' book.slug"><p class="m-1">{{ object.title }}, by {{ object.author }}</p></a>
+    {% endfor %}
+</div>
+
+{% endblock %}
