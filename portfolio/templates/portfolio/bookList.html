@@ -8,7 +8,7 @@
     </div>
   </div>
 <div class="">
-    <p class="fs-5">I created this as a way to share books I've liked and the notes I've taken. I haven't finished every book on this list, some I've only read a few chapters, some I've read many times. Books marked in green I thought were extraordinary, ones that are underlined have a link to a notes page.</p>
+    <p class="fs-5">I created this as a way to share books I've liked and the notes I've taken. I haven't finished every book on this list, some I've only read a few chapters, some I keep rereading. Books marked in green I thought were especially great, ones that are underlined have a link to a notes page.</p>
     {% for book in book_list %}
         {% if book.slug != '0' %}
             <a href="{% url 'bookNotes' book.slug %}" class="{% if book.favorite != 0 %} text-success {%else %} text-dark {% endif %}"><p class="m-1">{{ book.title }}, by {{ book.author }}</p></a>
