@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '%wf7an1%&x6(ao8o%*1g)u2guw-pugg7kd&jpms5hqhsh8bf&z'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['68.183.120.121', 'localhost', 'alexpreston.org', 'www.alexpreston.org', '127.0.0.1']
 
@@ -85,7 +85,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'personalWebsite',
         'USER': 'doadmin',
-        'PASSWORD': password,
+        'PASSWORD': 'rqncbsmor260ngxw',
         'HOST': 'db-mysql-nyc1-61215-do-user-7995194-0.b.db.ondigitalocean.com',
         'PORT': '25060',
     }
