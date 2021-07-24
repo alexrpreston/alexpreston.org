@@ -6,15 +6,15 @@
 <div class="container">
   <div>
     <div class="">
-        <a href="{% url 'home' %}" class="text-dark nameLink"><p class="fs-1 fw-bold m-0">Alex Preston / projects</p></a>
+        <a href="{% url 'home' %}" class="text-dark nameLink"><p class="fs-1 fw-bold m-0"><a class="nameHeader" href="{% url 'home' %}">Alex Preston</a> / <a class="nameHeader" href="{% url 'blog' %}">blog</a></p></a>
     </div>
   </div>
-  <div class="row">
-    <div class="col-md-8 card mb-4  mt-3 left  top">
-      <div class="card-body">
+  <div class="">
+    <div class="">
+      <div class="">
         <h1>{% block title %} {{ object.title }} {% endblock title %}</h1>
-        <p class=" text-muted">{{ post.author }} | {{ post.created_on }}</p>
-        <p class="card-text ">{{ object.content| markdown | safe }}</p>
+        <p class="text-muted">{{ post.created_on }}</p>
+        <p class="">{{ object.content| markdown | safe }}</p>
       </div>
     </div>
   </div>

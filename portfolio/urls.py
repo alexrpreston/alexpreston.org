@@ -10,6 +10,5 @@ urlpatterns = [
     path('blog/<slug:slug>/', PostDetail.as_view(), name='post_detail'),
     path('bookshelf/', BookList.as_view(), name='bookList'),
     path('bookshelf/<slug:slug>/', BookDetail.as_view(), name='bookNotes'),
-    
 ]
 

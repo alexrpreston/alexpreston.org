@@ -10,8 +10,10 @@ STATUS = (
 class Book(models.Model):
     title = models.CharField(max_length=200, unique=True)
     author = models.CharField(max_length=200, unique=False)
-    slug = models.SlugField(max_length=200, unique=True)
-    notes = MarkdownxField()
+    slug = models.SlugField(max_length=200, default=0)
+    notes = MarkdownxField(default=0)
+    favorite = models.IntegerField(default=0)
+
 
     def __str__(self):
         return self.title
@@ -19,7 +21,6 @@ class Book(models.Model):
 class Post(models.Model):
     title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
-    author = models.ForeignKey(User, on_delete= models.CASCADE,related_name='blog_posts')
     updated_on = models.DateTimeField(auto_now= True)
     content = MarkdownxField()
     created_on = models.CharField(max_length=200, unique=True)

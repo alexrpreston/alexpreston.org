@@ -1,6 +1,11 @@
-.nameLink:hover{
-    text-decoration-color: aqua;
-    color: aqua;
+.nameHeader:hover{
+    text-decoration: underline;
+    color: black;
+}
+
+.nameHeader{
+    color: black;
+    text-decoration: none;
 }
 
 .nameLink:link {
