@@ -1,0 +1,47 @@
+.nameHeader:hover{
+    text-decoration: underline;
+    color: black;
+}
+
+.nameHeader{
+    color: black;
+    text-decoration: none;
+}
+
+.nameLink:link {
+    text-decoration: none;
+}
+.blogContent{
+    margin: auto;
+    width: 50%;
+}
+
+
+@media (min-width:320px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
+    .blogContent{
+        margin: auto;
+        width: 100%;
+    }
+}
+@media (min-width:480px)  { /* smartphones, Android phones, landscape iPhone */ 
+    .blogContent{
+        margin: auto;
+        width: 100%;
+    }
+}
+@media (min-width:600px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
+@media (min-width:801px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ 
+    .blogContent{
+        margin: auto;
+        width: 50%;
+    }
+}
+@media (min-width:1281px) { /* hi-res laptops and desktops */ 
+    .blogContent{
+        margin: auto;
+        width: 50%;
+    }
+}
+
+
