@@ -1,44 +1,58 @@
-{% extends 'portfolio/base.html' %}
-{% load static %}
-{% load markdown_extras %}
-
-
+{% extends 'portfolio/base.html' %} {% load static %} {% load markdown_extras %}
 {% block content %}
 
-    <div class="homePageSections">
-        <div>
-            <!-- <a href="{% url 'home' %}" class="headerImageLink"><img class="" style="border-radius: 50%;" width="150" height="200" src="{% static 'portfolio/images/profileImage.jpeg' %}"></a> -->
-            <div class="">
-                <a href="{% url 'home' %}" class="text-dark nameLink"><p class="fs-1 fw-bold m-0">Alex Preston</p></a>
-                <p class="text-secondary m-0">Student at Southern Methodist University</p> 
-            </div>
-        </div>
-        <p class="mt-4"><a target="_blank" href="mailto:apreston@smu.edu" class="">apreston@smu.edu</a></p>
-        <div>
-            <p class="fs-2 fw-bold">What I'm working on</p>
-            <ul class="projectListHomePage">
-                <li class="fs-4"><a href="https://summarizen.com/" class="text-dark" target="_blank">Summarizen</a>
-                <li class="fs-4">Commodity Price Predictor</li>
-            </ul>
-            <p class="fs-5">Get a full list on my <a href="{% url 'portfolio' %}" class="text-dark">Projects page</a></p>
-        </div>
-        <div>
-            <p class="fs-2 fw-bold">Newest Articles</p>
-                {% for post in post_list %}
-                    <div class="">
-                        <a href="{% url 'post_detail' post.slug  %}" class="text-decoration-none text-dark fs-3"><p>{{ post.title }}</p></a>
-                        <p style="margin-top: -1rem;" class="text-secondary">{{ post.created_on}}</p>
-                    </div>
-                {% endfor %}
-            <p class="viewMoreHomePage"><a href="{% url 'blog' %}" class="fs-5 text-dark">Read the rest here.</a></p>
-        </div>
-        <div>
-            <p class="fs-2 fw-bold">Bookshelf</p>
-            <a href="{% url 'bookList' %}" class="text-dark"><p class="fs-4">View a collection of books I've read</p></a>
-        </div>
+<div class="homePageSections">
+  <div>
+    <!-- <a href="{% url 'home' %}" class="headerImageLink"><img class="" style="border-radius: 50%;" width="150" height="200" src="{% static 'portfolio/images/profileImage.jpeg' %}"></a> -->
+    <div class="">
+      <a href="{% url 'home' %}" class="text-dark nameLink"
+        ><p class="fs-1 fw-bold m-0">Alex Preston</p></a
+      >
+      <p class="text-secondary m-0">Software Engineer at Datadog</p>
     </div>
-        
-        
+  </div>
+  <p class="mt-4">
+    <a class="">alexrpreston @ gmail.com</a>
+  </p>
+  <div>
+    <p class="fs-2 fw-bold">What I'm working on</p>
+    <ul class="projectListHomePage">
+      <li class="fs-4">
+        <a href="https://summarizen.com/" class="text-dark" target="_blank"
+          >Summarizen</a
+        >
+      </li>
+      <li class="fs-4">Commodity Price Predictor</li>
+    </ul>
+    <p class="fs-5">
+      Get a full list on my
+      <a href="{% url 'portfolio' %}" class="text-dark">Projects page</a>
+    </p>
+  </div>
+  <div>
+    <p class="fs-2 fw-bold">Newest Articles</p>
+    {% for post in post_list %}
+    <div class="">
+      <a
+        href="{% url 'post_detail' post.slug  %}"
+        class="text-decoration-none text-dark fs-3"
+        ><p>{{ post.title }}</p></a
+      >
+      <p style="margin-top: -1rem" class="text-secondary">
+        {{ post.created_on}}
+      </p>
+    </div>
+    {% endfor %}
+    <p class="viewMoreHomePage">
+      <a href="{% url 'blog' %}" class="fs-5 text-dark">Read the rest here.</a>
+    </p>
+  </div>
+  <div>
+    <p class="fs-2 fw-bold">Bookshelf</p>
+    <a href="{% url 'bookList' %}" class="text-dark"
+      ><p class="fs-4">View a collection of books I've read</p></a
+    >
+  </div>
+</div>
 
 {% endblock %}
-        

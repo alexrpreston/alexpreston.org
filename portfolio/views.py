@@ -4,11 +4,15 @@ from .models import Post, Book
 # Create your views here.
 from django import template
 from markdownx.utils import markdownify
+from datetime import datetime
+
 
 register = template.Library()
 
 def home(request):
-    queryset = Post.objects.filter(status=1).order_by('-created_on')
+    queryset = Post.objects.filter(status=1)
+    queryset = sorted(queryset, reverse=True, key=lambda x: datetime.strptime(x.created_on, "%a %b %d %Y"))
+    queryset = queryset[:3]
     context = {
         'post_list': queryset
     }
